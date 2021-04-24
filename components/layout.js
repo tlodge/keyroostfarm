@@ -4,9 +4,9 @@ import {useState} from 'react';
 import Link from 'next/link'
 
 const menuitems = [
-    {"name": "home", url:"/"}, 
-    {"name": "unmanned click and collect", url:"/unmanned"},
-    {"name": "seasonal unmanned stores", url:"/seasonal"}
+    {"name": "home",  mobile: "home", url:"/"}, 
+    {"name": "unmanned click and collect", mobile: "click and collect", url:"/unmanned"},
+    {"name": "seasonal unmanned stores",  mobile: "seasonal stores", url:"/seasonal"}
 ];
 
 export default function Layout({ children }) {
@@ -16,7 +16,9 @@ export default function Layout({ children }) {
         return (<Link key={m.name} href={m.url} ><a className="text-xs lg:text-base text-bold pr-4">{m.name}</a></Link>);
     })
 
-    
+    const mobilemenu = menuitems.map(m=>{
+        return (<Link key={m.mobile} href={m.url} ><a className="text-xs lg:text-base text-bold pr-4">{m.mobile}</a></Link>);
+    })
 
     return <div className="bg-roost">
         <header className="p-4 lg:mb-4">
@@ -36,7 +38,7 @@ export default function Layout({ children }) {
             </div>
         </header>
 
-        {visible && <div className="md:hidden flex flex-grow justify-end items-center text-white">{menu}</div>}
+        {visible && <div className="p-4 bg-lightblue font-bold md:hidden text-center text-charcoal flex flex-grow justify-center items-center">{mobilemenu}</div>}
         <div className="bg-charcoal">
         {children}
         </div> 
