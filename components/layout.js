@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 const menuitems = [
     {"name": "home",  mobile: "home", url:"/"}, 
+    {"name": "about us",  mobile: "us", url:"/team"}, 
     {"name": "unmanned click and collect", mobile: "click and collect", url:"/unmanned"},
     {"name": "seasonal unmanned stores",  mobile: "seasonal stores", url:"/seasonal"}
 ];
@@ -42,8 +43,10 @@ export default function Layout({ children }) {
         <div className="bg-charcoal">
         {children}
         </div> 
-        <footer className="bg-roost w-full h-24">
-
+        <footer className="bg-roost w-full h-16 flex items-center justify-center">
+            <Link  href={"https://keyroost.com"} ><a className="text-white opacity-70 text-base text-bold pr-4">more about keyroost</a></Link>
+            <Link  href={"/keyroost8"}><a className="text-white text-base text-bold pr-4 opacity-70">the keyroost 8</a></Link>
+            <Link  href={"/team"}><a className="text-white text-base text-bold opacity-70">who we are</a></Link>
         </footer>
     </div>
 }

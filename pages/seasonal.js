@@ -7,7 +7,7 @@ export default function Home() {
         <title>Keyroost farms</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div class="flex justify-center items-center">
+      <div className="flex justify-center items-center">
       <img src="/caravanscenario.png"></img>
       </div>
     </div>
