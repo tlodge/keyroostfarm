@@ -94,7 +94,7 @@ export default function Home() {
             <img src="./cabinet.svg"/>
           </div>
           <div className="col-span-7 flex justify-center flex-col ">
-            Keyroost is so versatile that you could run an unmanned click and collect store in the middle of a field on a busy weekend, test the market for new produce or run a permanent super-slick store. 
+            Keyroost is so versatile that you could run an unmanned click and collect store in the middle of a field, test the market for new produce or run a permanent super-slick store. 
           </div>
         </div>
       </div>

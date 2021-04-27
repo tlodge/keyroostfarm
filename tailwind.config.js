@@ -20,13 +20,15 @@ module.exports = {
     },
     extend: {
       width : {
-        "copy": "766px"
+        "copy": "766px",
+        "big": "418px"
       }
     },
     colors: {
-      mustard: "#CD9C4B",
+      mustard: "#E0AF4C",
       charcoal: "#383840",
       roost: "#496A77",
+      lightroost:"#528396",
       white: "#fff",
       grey:"#CBCBCB",
       pink:"#AE2B4D",
