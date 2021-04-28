@@ -14,7 +14,7 @@ export default function Home() {
           
            {/* large and medium */}
           <div className="hidden md:flex flex-col h-full  justify-center bg-bottom bg-no-repeat" style={{backgroundImage: `url("/trees.svg")`}}>
-            <div className="flex-grow flex-col justify-center items-center">
+            <div className="flex flex-grow flex-col justify-center items-center ">
               <div className="w-full text-center p-8">
                 <div className="text-sm md:text-3xl text-white text-center whitespace-nowrap ">
                   <span className="font-bold">Keyroost</span> helps farmers sell direct to customers
